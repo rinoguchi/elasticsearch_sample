@@ -1,0 +1,2 @@
+# elasticsearch_sample
+Elasticsearchについて色々試してみるためのリポジトリ
