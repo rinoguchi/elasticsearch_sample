@@ -5,7 +5,7 @@ services:
     ports:
       - 9000:9000
   es01:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.11.0
+    build: .
     container_name: es01
     environment:
       - node.name=es01
@@ -25,7 +25,7 @@ services:
     networks:
       - elastic
   es02:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.11.0
+    build: .
     container_name: es02
     environment:
       - node.name=es02
@@ -43,7 +43,7 @@ services:
     networks:
       - elastic
   es03:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.11.0
+    build: .
     container_name: es03
     environment:
       - node.name=es03
