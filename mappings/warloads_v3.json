@@ -1,0 +1,26 @@
+{
+    "mappings": {
+      "properties": {
+        "age": {
+          "type": "long"
+        },
+        "birthday": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "country": {
+          "type": "keyword",
+          "ignore_above": 256
+        },
+        "introduction": {
+          "type": "text",
+          "analyzer": "kuromoji",
+          "fielddata": true
+        },
+        "name": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    }
+  }
